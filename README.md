@@ -1,26 +1,38 @@
-#Churn Prediction
-This project aims to predict customer churn for a telecommunications company using machine learning techniques. The dataset used for this project is publicly available from Kaggle, and contains information on customer demographics, account information, and service usage.
+# Churn Analysis and Prediction Project
 
-##Files
-Churn_Prediction.ipynb: Jupyter notebook containing the code for the project.
-telecom_churn.csv: Dataset used for the project.
-Libraries Used
-The following Python libraries were used for this project:
+This project aims to analyze and predict customer churn for a telco service provider using the dataset from the [Churn Prediction 2020 competition](https://www.kaggle.com/c/churn-prediction-practice-problem). The project has been divided into various steps :
+- Data Analysis, visualisation (EDA)
+- Feature Engineering
+- Model Development 
 
-Numpy
-Pandas
-Matplotlib
-Seaborn
-Scikit-learn
-Approach
-The project involved the following steps:
+## Requirements
 
-Data Cleaning and Preprocessing: The dataset was cleaned and preprocessed to handle missing values and convert categorical variables into numerical representation using one-hot encoding.
-Exploratory Data Analysis: The relationships between variables were analyzed to identify important features for the model.
-Model Building: A Random Forest Classifier model was built and trained on the preprocessed data to predict customer churn.
-Model Evaluation: The model was evaluated using various performance metrics, including accuracy, precision, recall, and F1 score. Confusion matrix was also used to analyze the model's predictions and identify areas for improvement.
-Results
-The Random Forest Classifier model achieved an accuracy of 92% on the test data, indicating its effectiveness in predicting customer churn. The most important features for the model were found to be the number of customer service calls made and the international plan subscribed by the customer.
+The following packages are required to run the code in this project:
+- numpy
+- pandas
+- matplotlib
+- seaborn
+- sklearn
 
-Conclusion
-The project demonstrates the effectiveness of machine learning techniques in predicting customer churn for a telecommunications company. The insights gained from this project can be used to develop targeted marketing strategies and retention programs to reduce customer churn and increase revenue.
+## Data
+
+The dataset used in this project is the Telco Service Provider dataset from the Churn Prediction 2020 competition. The data includes information such as customer demographic information, services used, and billing information.
+
+## Analysis
+
+The analysis part of the project focuses on understanding the relationship between various features and customer churn. The data is first cleaned and preprocessed, followed by exploratory data analysis using visualizations created with matplotlib and seaborn.
+
+## Prediction
+
+For the prediction part of the project, a Random Forest classifier is used to build the model. The model is trained and tested on the data to predict whether a customer will churn or not.
+
+## Conclusion
+
+The project provides insights into customer churn and the factors that contribute to it. The final model built can be used by the telco service provider to predict customer churn and take necessary actions to retain customers.
+
+## How to run the code
+
+1. Clone the repository: `git clone https://github.com/<your-username>/churn-analysis-and-prediction.git`
+2. Navigate to the project directory: `cd churn-analysis-and-prediction`
+3. Install the required packages: `pip install -r requirements.txt`
+4. Run the python notebook: `python notebook`
